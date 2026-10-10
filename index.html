@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="TITAN GYM — خطتك للتدريب والقوة واللياقة.">
+  <title>TITAN GYM | ابدأ قوتك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="TITAN GYM الرئيسية"><span class="brand-mark">T</span><span>TITAN<span class="accent">GYM</span><small>TRAIN WITH PURPOSE</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">الرئيسية</a><a href="#programs">البرامج</a><a href="#plan">جدول التمرين</a><a href="#nutrition">التغذية</a><a href="#bmi">حاسبة BMI</a>
+    </nav>
+    <a class="header-cta" href="#plan">ابدأ دلوقتي <span>↙</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR NEXT LEVEL STARTS HERE</p>
+        <h1>مش مجرد تمرين.<br><span>دي عقلية بطل.</span></h1>
+        <p class="hero-copy">ابني قوتك خطوة بخطوة. خطط تدريب واضحة، عادات صحية، ومتابعة تخليك مركز على هدفك.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#programs">اكتشف البرامج <span>←</span></a><a class="btn btn-ghost" href="#plan"><span class="play">▶</span> شوف جدول التمرين</a></div>
+        <div class="hero-stats"><div><strong>01</strong><span>ابدأ من مكانك</span></div><i></i><div><strong>100%</strong><span>التزامك يصنع الفرق</span></div><i></i><div><strong>DAY 1</strong><span>كل رحلة ليها بداية</span></div></div>
+      </div>
+      <div class="hero-tag"><span class="tag-line"></span><span>DISCIPLINE OVER MOTIVATION</span></div>
+      <a class="scroll-cue" href="#programs">انزل واكتشف <span>↓</span></a>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="section-head"><div><p class="eyebrow">CHOOSE YOUR FOCUS</p><h2>اختار <span class="accent">هدفك</span></h2></div><p>كل هدف محتاج خطة مناسبة. اختار البرنامج اللي يناسب مستواك وابدأ تدريجيًا.</p></div>
+      <div class="program-grid">
+        <article class="program-card program-chest"><div class="card-number">01 / BUILD</div><div class="program-icon">✦</div><div class="program-info"><span class="pill">قوة وعضلات</span><h3>بناء العضلات</h3><p>تمارين مقاومة متدرجة مع راحة كافية وتغذية متوازنة.</p><a href="#plan" class="text-link" data-plan="muscle">شوف الخطة <span>←</span></a></div></article>
+        <article class="program-card program-fitness"><div class="card-number">02 / MOVE</div><div class="program-icon">↗</div><div class="program-info"><span class="pill">لياقة وحركة</span><h3>رفع اللياقة</h3><p>حسّن قدرتك على الحركة والتحمل مع تمارين مناسبة لمستواك.</p><a href="#plan" class="text-link" data-plan="fitness">شوف الخطة <span>←</span></a></div></article>
+        <article class="program-card program-balance"><div class="card-number">03 / BALANCE</div><div class="program-icon">◈</div><div class="program-info"><span class="pill">صحة واستمرارية</span><h3>جسم متناسق</h3><p>مزيج من المقاومة والحركة والعادات الصحية القابلة للاستمرار.</p><a href="#plan" class="text-link" data-plan="balance">شوف الخطة <span>←</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="quote-band"><div class="quote-symbol">“</div><p>مش لازم تكون أقوى واحد النهارده.<br><strong>المهم تبقى أحسن من امبارح.</strong></p><span>THE TITAN MINDSET</span></section>
+
+    <section class="section plan-section" id="plan">
+      <div class="section-head"><div><p class="eyebrow">YOUR WEEK, YOUR RULES</p><h2>جدول <span class="accent">التمرين</span></h2></div><p>مثال أسبوعي عام. اختار اليوم وشوف التمرين المقترح، وعدّل حسب خبرتك ووقتك.</p></div>
+      <div class="plan-layout">
+        <div class="day-list" id="dayList">
+          <button class="day-btn active" data-day="0"><span>السبت</span><small>صدر + ترايسبس</small><b>01</b></button>
+          <button class="day-btn" data-day="1"><span>الأحد</span><small>ظهر + بايسبس</small><b>02</b></button>
+          <button class="day-btn" data-day="2"><span>الإثنين</span><small>راحة أو مشي</small><b>03</b></button>
+          <button class="day-btn" data-day="3"><span>الثلاثاء</span><small>رجلين + بطن</small><b>04</b></button>
+          <button class="day-btn" data-day="4"><span>الأربعاء</span><small>كتف + ذراع</small><b>05</b></button>
+          <button class="day-btn" data-day="5"><span>الخميس</span><small>كارديو خفيف</small><b>06</b></button>
+          <button class="day-btn" data-day="6"><span>الجمعة</span><small>راحة واستشفاء</small><b>07</b></button>
+        </div>
+        <div class="workout-panel">
+          <div class="workout-top"><div><p class="eyebrow">TODAY'S SESSION</p><h3 id="workoutTitle">صدر + ترايسبس</h3></div><span class="workout-badge" id="workoutDuration">45–60 دقيقة</span></div>
+          <p class="workout-note" id="workoutNote">ابدأ بإحماء خفيف، واختار أوزان تقدر تتحكم فيها بتكنيك صحيح.</p>
+          <div class="exercise-list" id="exerciseList"></div>
+          <div class="panel-foot"><span>✓ علّم على كل تمرين بعد ما تخلصه</span><button id="resetExercises">إعادة التحديد ↻</button></div>
+        </div>
+      </div>
+      <p class="fine-print">ملاحظة: ده نموذج عام مش برنامج طبي أو تدريب شخصي. ابدأ بمستوى مناسب، اتعلم التكنيك الصحيح، وخد راحة لو حسيت بألم غير طبيعي.</p>
+    </section>
+
+    <section class="nutrition-section" id="nutrition">
+      <div class="nutrition-visual"><div class="nutrition-stamp">EAT<br><span>SMART</span></div></div>
+      <div class="nutrition-copy"><p class="eyebrow">FUEL YOUR PROGRESS</p><h2>النتيجة مش في الجيم بس.<br><span class="accent">غذّي جسمك صح.</span></h2><p>الأكل المتوازن والنوم والراحة جزء من الخطة. مش محتاج حرمان قاسي ولا مكملات عشان تبدأ.</p>
+        <div class="nutrition-points"><div><span class="point-icon">01</span><div><strong>بروتين متنوع</strong><p>بيض، فول، عدس، زبادي، سمك أو دجاج حسب المتاح.</p></div></div><div><span class="point-icon">02</span><div><strong>طاقة متوازنة</strong><p>عيش، أرز، بطاطس، فاكهة وخضار ضمن وجبات متنوعة.</p></div></div><div><span class="point-icon">03</span><div><strong>نوم ومياه</strong><p>اهتم بالنوم المنتظم واشرب مياه على مدار اليوم.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="section bmi-section" id="bmi">
+      <div class="section-head"><div><p class="eyebrow">KNOW YOUR NUMBERS</p><h2>حاسبة <span class="accent">BMI</span></h2></div><p>أداة توعوية بسيطة لحساب مؤشر كتلة الجسم للبالغين، وليست تشخيصًا طبيًا.</p></div>
+      <div class="bmi-box"><div class="bmi-form"><label for="height">الطول (سم)</label><input id="height" type="number" min="100" max="250" placeholder="مثال: 175"><label for="weight">الوزن (كجم)</label><input id="weight" type="number" min="20" max="350" placeholder="مثال: 75"><button class="btn btn-primary" id="calcBmi">احسب المؤشر <span>←</span></button><p class="input-error" id="bmiError" role="status"></p></div><div class="bmi-result" aria-live="polite"><span class="result-icon">↗</span><p class="eyebrow">YOUR RESULT</p><strong id="bmiValue">--</strong><h3 id="bmiCategory">جاهز تبدأ؟</h3><p id="bmiMessage">اكتب طولك ووزنك عشان تشوف النتيجة.</p></div></div>
+      <p class="fine-print">لو عمرك أقل من 18 سنة، تصنيف BMI للبالغين مش مناسب لتقييمك؛ التقييم بيختلف حسب العمر والنمو. ومؤشر BMI لا يفرق بين العضلات والدهون.</p>
+    </section>
+
+    <section class="final-cta"><p class="eyebrow">NO PERFECT TIME. JUST START.</p><h2>خطوتك الأولى <span class="accent">بتبدأ دلوقتي.</span></h2><p>اختار هدف بسيط، وابدأ بالتدريج، وخلي الاستمرارية هي المكسب الحقيقي.</p><a class="btn btn-primary" href="#plan">ابدأ جدولك <span>←</span></a></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">T</span><span>TITAN<span class="accent">GYM</span><small>TRAIN WITH PURPOSE</small></span></a><p>القوة عادة بتتبني يوم ورا يوم.</p><span>© <span id="year"></span> TITAN GYM</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
